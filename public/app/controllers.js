@@ -1,7 +1,7 @@
 angular.module("FlyApp")
 .controller("PlanesCtrl", ["$scope", "PlanesAPI", function($scope, PlanesAPI){
 	//Define title for each page
-	$scope.title = "Snakes!"
+	$scope.title = "An airplane or aeroplane (informally plane) is a powered, fixed-wing aircraft that is propelled forward by thrust from a jet engine or propeller. Airplanes come in a variety of sizes, shapes, and wing configurations. Learn more about different kinds of planes below."
 	$scope.planes = [];
 
 	PlanesAPI.getPlanes().then(function success(response){

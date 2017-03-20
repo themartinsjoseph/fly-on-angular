@@ -13,6 +13,20 @@ $stateProvider.state("home", {
 	templateUrl: "app/views/details.html",
 	controller: "DetailCtrl"
 })
+.state("airplaneadd", {
+	url: "/airplaneadd",
+	templateUrl: "app/views/airplaneAdd.html",
+	controller: "AddPlaneCtrl"
+})
+.state("airplaneedit", {
+	url: "/plane/edit/:id",
+	templateUrl: "app/views/airplaneEdit.html",
+	controller: "DetailCtrl"
+})
+.state('deletePlane', {
+       url: '/plane/delete',
+       controller: 'DeletePlaneCtrl'
+     })
 .state("404", {
 	url: "/404",
 	templateUrl: "app/views/404.html"

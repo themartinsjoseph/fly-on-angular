@@ -1,8 +1,19 @@
-<h2>{{ title }}</h2>
+<h3>{{ title }}</h3>
 
 <p ng-hide="planes">LOADING PLANES NOW...</p>
 
-<div ng-repeat="p in planes">
-	<h3><strong>{{p.manufacturer}}</strong> {{p.model}}</h3>
-	<a ng-href="/plane/{{p._id}}" class="btn btn-success">Details</a>
+<div class="row">
+	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+		<div ng-repeat="p in planes">
+		<h3><strong>{{p.manufacturer}}</strong> {{p.model}}</h3>
+		<a ng-href="/plane/{{p._id}}" class="btn btn-success">Details</a>
+		</div>
+	</div>
 </div>
+
+<!-- <div ng-repeat="p in planes | filter:searchTerm">
+   <h3><strong>{{ p.manufacturer }}</strong> {{ p.model }}</h3>
+   <a ng-href="/plane/{{ p._id }}" class="btn btn-primary">Details</a>
+</div> -->
+
+

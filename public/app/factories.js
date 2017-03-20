@@ -17,7 +17,11 @@ angular.module("FlyApp")
 			})
 		},
 		deletePlane: function(id){
+			$http.delete("")
+
 			console.log("STUB");
+
+
 		},
 		updatePlane: function(plane){
 			console.log("STUB");
